@@ -27,6 +27,18 @@ ProfessorAegis was built around a Discord server workflow:
 4. Run benchmark/report workflows through JavaScript services and Python workers.
 5. Generate structured reports, archives, and review artifacts for players.
 
+## Simulation Approach
+
+ProfessorAegis benchmarks a submitted team by validating a Pokemon Showdown export, selecting opponents from configured benchmark pools, and running battle jobs through local worker processes. The battle mechanics come from a local Pokemon Showdown simulator; ProfessorAegis handles orchestration, legal action selection, progress tracking, and report generation.
+
+- **Worker-driven battle loop:** The benchmark worker starts simulation jobs, sends packed teams into Pokemon Showdown, listens for team-preview, switch, and move requests, then responds with valid choices.
+- **Opponent selection:** Benchmark modes choose from curated or tournament-style opponent pools, with seedable selection when a repeatable sample is needed.
+- **Move-selection policy:** The BattleBrain policy is deterministic and heuristic-based, not machine learning. It scores legal moves using visible battle state: base power, accuracy, spread damage, type effectiveness, STAB, target HP, turn order, active speed control, Fake Out timing, Protect streaks, field conditions, and current win/loss pressure.
+- **Short-term memory:** Recent choices, failed moves, immunities, misses, Protect interactions, damage events, switches, and status updates are tracked so the policy avoids obvious repeats and adjusts targets when a previous action failed.
+- **Report output:** Completed runs are summarized into win/loss/tie records, opponent breakdowns, progress states, and report cards that can be reviewed from Discord.
+
+This keeps the simulation explainable: every decision comes from visible state and scoring rules, making it easier to debug than an opaque model while still producing useful benchmark evidence.
+
 ## Engineering Highlights
 
 - **Discord.js interaction shell:** Handles slash commands, buttons, selects, modals, embeds, and admin-only flows.
@@ -47,7 +59,7 @@ ProfessorAegis was built around a Discord server workflow:
 | `database/postgres/` | PostgreSQL client, setup scripts, connection checks, and migration support utilities. |
 | `scripts/` | Local helper scripts for icon syncing and parity checks. |
 | `assets/pokemon-icons/` | Icon manifest contract and cache policy; downloaded icons are intentionally ignored. |
-| `Media/GitHub` | Placeholder for future README screenshots and preview media. |
+| `Media/GitHub` | README screenshots, GIF previews, and full demo captures. |
 
 ## Key Code
 
@@ -56,6 +68,8 @@ ProfessorAegis was built around a Discord server workflow:
 - `services/BenchMark.js`: Discord-facing benchmark menu and report interaction flow.
 - `services/benchmarkService.js`: JavaScript bridge between Discord flows and benchmark worker jobs.
 - `services/benchmarkWorker.py`: Python HTTP worker for benchmark and report processing.
+- `services/benchmark_battle_runner.py`: Python simulation runner and fallback BattleBrain policy path.
+- `services/benchmark_persistent_sim_worker.js`: Reusable Node/Pokemon Showdown worker with the primary BattleBrain move-selection policy.
 - `services/benchmark_engine.py`: Core benchmark scoring and analysis routines.
 - `services/benchmark_showdown.py`: Pokemon Showdown readiness, validation, and helper integration.
 - `services/benchmark_paper_report.js`: HTML/report rendering support.
