@@ -1,0 +1,9 @@
+{
+  "user_id": "test-user",
+  "team_export": "Farigiraf @ Sitrus Berry\nAbility: Armor Tail\nLevel: 50\nTera Type: Fairy\nEVs: 244 HP / 132 Def / 76 SpA / 52 SpD / 4 Spe\nModest Nature\nIVs: 0 Atk\n- Psychic Noise\n- Dazzling Gleam\n- Energy Ball\n- Ally Switch\n\nZoroark-Hisui\nAbility: Illusion\nLevel: 50\nTera Type: Normal\nEVs: 252 SpA / 4 SpD / 252 Spe\nSerious Nature\nIVs: 0 Atk\n- Shadow Ball\n- Flamethrower\n- Sludge Bomb\n- Protect\n\nWhimsicott @ Focus Sash\nAbility: Prankster\nLevel: 50\nTera Type: Ghost\nEVs: 68 HP / 4 Def / 212 SpA / 4 SpD / 220 Spe\nTimid Nature\nIVs: 0 Atk\n- Tailwind\n- Moonblast\n- Encore\n- Helping Hand\n\nUrshifu-Rapid-Strike @ Mystic Water\nAbility: Unseen Fist\nLevel: 50\nTera Type: Fire\nEVs: 252 Atk / 4 SpD / 252 Spe\nAdamant Nature\nIVs: 0 SpA\n- Surging Strikes\n- Close Combat\n- U-turn\n- Protect\n\nRillaboom @ Assault Vest\nAbility: Grassy Surge\nLevel: 50\nTera Type: Fire\nEVs: 196 HP / 196 Atk / 4 Def / 108 SpD / 4 Spe\nAdamant Nature\nIVs: 0 SpA\n- Fake Out\n- Wood Hammer\n- Grassy Glide\n- Stomping Tantrum\n\nArcanine-Hisui @ Safety Goggles\nAbility: Intimidate\nTera Type: Fire\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Flare Blitz\n- Rock Slide\n- Iron Head\n- Protect",
+  "template_keys": [
+    "hard-trick-room",
+    "spread-heavy-offense"
+  ],
+  "battle_count": 20
+}

@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!database/postgres/.env.postgres.example
+
+# Local database files
+professor-aegis.db
+*.db
+*.sqlite
+*.sqlite3
+database/postgres/Archive/
+
+# Generated and local-only output
+artifacts/
+benchmark_assets/
+benchmark_cache/
+backups/
+logs/
+*.log
+*.zip
+*.pdf
+
+# External local checkout used by advanced benchmark workflows
+pokemon-showdown/
+
+# Local process and backup helpers
+ecosystem.config.cjs
+aegis-backup.bat
+
+# Local workflow notes that are not public portfolio material
+A?ENTS.md
+docs/
+Needs
+
+# Generated Pokemon icon cache
+assets/pokemon-icons/icons/
+assets/pokemon-icons/manifest.local.json
+
+# Python and OS cache
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db

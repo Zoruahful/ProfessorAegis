@@ -1,0 +1,34 @@
+{
+  "name": "professor-aegis",
+  "version": "1.0.0",
+  "description": "Legacy Discord-based competitive battle league and benchmark assistant succeeded by BattleLab.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "deploy": "node deploy-commands.js",
+    "db:postgres:test": "node database/postgres/test_connection.js",
+    "db:sqlite:dependency-check": "node database/postgres/check_sqlite_dependencies.js",
+    "db:postgres:final-audit": "node database/postgres/final_postgres_audit.js"
+  },
+  "keywords": [
+    "discord",
+    "discord-js",
+    "python",
+    "benchmark",
+    "bot",
+    "portfolio"
+  ],
+  "author": "Joshua Acevedo",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "dotenv": "^17.3.1",
+    "pg": "^8.20.0",
+    "playwright": "^1.59.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
