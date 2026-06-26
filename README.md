@@ -9,8 +9,9 @@ ProfessorAegis is a discontinued Discord-based competitive battle league and ben
 
 ## Demo
 
-[Menu and setup walkthrough](Media/GitHub/MenuSelection.mp4)  
-[Simulation and report walkthrough](Media/GitHub/Simulation.mp4)
+| MENU FLOW | SIMULATION FLOW |
+| --- | --- |
+| ![Menu workflow preview](Media/GitHub/Gifs/menu_preview.gif) | ![Simulation workflow preview](Media/GitHub/Gifs/simulation_preview.gif) |
 
 | ACADEMY RECORDS | TEAM EXPORT |
 | --- | --- |
