@@ -9,7 +9,16 @@ ProfessorAegis is a discontinued Discord-based competitive battle league and ben
 
 ## Demo
 
-Public media capture is pending. The final README media section will follow the same compact portfolio style used by the Unreal projects: a short preview, a small screenshot table, and a clear feature walkthrough without overcrowding the page.
+[Menu and setup walkthrough](Media/GitHub/MenuSelection.mp4)  
+[Simulation and report walkthrough](Media/GitHub/Simulation.mp4)
+
+| ACADEMY RECORDS | TEAM EXPORT |
+| --- | --- |
+| ![Academy records menu](Media/GitHub/Screenshots/01_academy_records.png) | ![Team export modal](Media/GitHub/Screenshots/02_team_export_modal.png) |
+
+| SIMULATION RUNNING | REPORT OVERVIEW |
+| --- | --- |
+| ![Battle simulator running](Media/GitHub/Screenshots/03_simulation_running.png) | ![Simulation report overview](Media/GitHub/Screenshots/04_simulation_report.png) |
 
 ## Project Flow
 
