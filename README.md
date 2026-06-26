@@ -13,13 +13,9 @@ ProfessorAegis is a discontinued Discord-based competitive battle league and ben
 | --- | --- |
 | ![Menu workflow preview](Media/GitHub/Gifs/menu_preview.gif) | ![Simulation workflow preview](Media/GitHub/Gifs/simulation_preview.gif) |
 
-| ACADEMY RECORDS | TEAM EXPORT |
-| --- | --- |
-| ![Academy records menu](Media/GitHub/Screenshots/01_academy_records.png) | ![Team export modal](Media/GitHub/Screenshots/02_team_export_modal.png) |
-
-| SIMULATION RUNNING | REPORT OVERVIEW |
-| --- | --- |
-| ![Battle simulator running](Media/GitHub/Screenshots/03_simulation_running.png) | ![Simulation report overview](Media/GitHub/Screenshots/04_simulation_report.png) |
+| ACADEMY RECORDS | TEAM EXPORT | SIMULATION RUNNING | REPORT OVERVIEW |
+| --- | --- | --- | --- |
+| <img src="Media/GitHub/Screenshots/01_academy_records.png" alt="Academy records menu" width="190"> | <img src="Media/GitHub/Screenshots/02_team_export_modal.png" alt="Team export modal" width="190"> | <img src="Media/GitHub/Screenshots/03_simulation_running.png" alt="Battle simulator running" width="190"> | <img src="Media/GitHub/Screenshots/04_simulation_report.png" alt="Simulation report overview" width="190"> |
 
 ## Project Flow
 
