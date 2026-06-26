@@ -47,7 +47,7 @@ This keeps the simulation explainable: every decision comes from visible state a
 - **Worker orchestration:** Supports local benchmark worker endpoints and asynchronous job polling from the Discord-facing bot.
 - **Persistence path:** Includes SQLite-era support with PostgreSQL migration utilities and connection checks.
 - **Report generation:** Builds battle and benchmark artifacts from structured runtime data.
-- **Open-source handoff:** Keeps credentials, caches, local databases, generated archives, and local process-manager files out of the repository.
+- **Open-source hygiene:** Keeps credentials, caches, local databases, generated archives, and local process-manager files out of the repository.
 
 ## Project Structure
 
